@@ -43,12 +43,23 @@ header {
   color: var(--secondary-color);
 }
 
+.admin-link span {
+  height: 18px;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #D63500;
+  border-radius: 22px;
+  background: #FBEBEA;
+  color:#D63500
+}
+
 .icon:hover,
 .links-gp a:hover .icon,
 .links-gp a.active .icon {
   filter: var(--secondary-color-svg);
 }
-
 
 main {
   margin-left: 160px;
