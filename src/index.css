@@ -17,6 +17,9 @@
   --secondary-color: #0073E6;
   --secondary-color-svg: brightness(100%) invert(1%) sepia(100%) saturate(7500%) hue-rotate(194deg);
   --tertiary-color: #E5F1FC;
+  --quaternary-color: #D63500;
+  --quinary-color: #F6F8FA;
+  --senary-color: #FFF;
 }
 
 a {
@@ -38,4 +41,5 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--quinary-color) !important;
 }
