@@ -17,8 +17,10 @@ import NavItem from "../components/NavItem";
 import dashboardIcon from "../assets/icons/dashboard.svg";
 import assessmentIcon from "../assets/icons/note_alt.svg";
 import myLibraryIcon from "../assets/icons/quiz.svg";
-import strokeIcon from "../assets/icons/stroke.svg";
+import horizontalDashedStrokeIcon from "../assets/icons/horizontal_dashed_stroke.svg";
+import verticalStrokeIcon from "../assets/icons/vertical_stroke.svg";
 import roundStatusIcon from "../assets/icons/admin_meds.svg";
+import mobileScreenShareIcon from "../assets/icons/mobile_screen_share.svg";
 
 
 const Layout = () => {
@@ -74,6 +76,11 @@ const Layout = () => {
       <header>
         <nav className="secondary-top-nav">
           <div className="main-tab">{tabsName.main}</div>
+          <img 
+            className="vertical-stroke-icon" 
+            src={verticalStrokeIcon} 
+            alt="Vertical Stroke Icon"
+          />
           {tabsName.sub?.length ? (
             <div className="sub-tabs">
               <ul>
@@ -83,6 +90,11 @@ const Layout = () => {
               </ul>
             </div>
           ) : null}
+          <img 
+            className="mobile-screen-share-icon icon" 
+            src={mobileScreenShareIcon} 
+            alt="Mobile Screen Share Icon"
+          />
         </nav>
       </header>
 
@@ -111,7 +123,7 @@ const Layout = () => {
           />
           <NavItem
             className="admin-link"
-            icon={strokeIcon}
+            icon={horizontalDashedStrokeIcon}
             text={ADMIN.main}
             path={ADMIN.path}
             onClick={() => handleActiveTab(ADMIN.main)}
@@ -127,7 +139,7 @@ const Layout = () => {
       </nav>
 
       <main>
-        <Outlet />
+        <Outlet/>
       </main>
     </>
   );
