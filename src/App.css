@@ -13,7 +13,7 @@ header {
   z-index: 1;
   display: flex;
   justify-content: center;
-  background-color: #dbbcbc;
+  background-color: #FFF;
   overflow-x: hidden;
 }
 
@@ -33,6 +33,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  flex-shrink: 0;
   font-size: 0.75em;
 }
 
@@ -46,12 +47,16 @@ header {
 .admin-link span {
   height: 18px;
   padding: 6px 8px;
+  margin-top: 8px;
   display: flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid #D63500;
+  font-size: 0.834em;
+  font-weight: 500;
+  line-height: normal;
   border-radius: 22px;
-  background: #FBEBEA;
+  border: 1px solid #D63500;
+  background-color: #FBEBEA;
   color:#D63500
 }
 
