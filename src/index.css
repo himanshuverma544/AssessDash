@@ -43,3 +43,8 @@ body {
   min-height: 100vh;
   background: var(--quinary-color) !important;
 }
+
+.MuiContainer-root {
+  max-width: 100% !important;
+}
+
